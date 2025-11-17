@@ -1,9 +1,20 @@
-// All comment and console.log should be removed
 // Problem-1
-const formatValue = (value: string | number | boolean) => {};
+type FormatValue = string | number | boolean;
+const formatValue = (value: FormatValue) => {
+  if (typeof value === "string") {
+    return value.toUpperCase();
+  } else if (typeof value === "number") {
+    return value * 10;
+  } else {
+    return !value;
+  }
+};
 
 // Problem-2
-const getLength = (value: string | []) => {};
+type GetLength = string | number[];
+const getLength = (value: GetLength) => {
+  return value.length;
+};
 
 // Problem-3
 class Person {
@@ -12,10 +23,27 @@ class Person {
   constructor(name: string, age: number) {
     (this.name = name), (this.age = age);
   }
+  getDetails(): string {
+    return `'Name:${this.name},Age:${this.age}'`;
+  }
 }
 
 // Problem-4
-const filterByRating = (items: []) => {};
+type FilterByRating = {
+  title: string;
+  rating: number;
+}[];
+
+const filterByRating = (items: FilterByRating) => {
+  return items;
+};
+const books = [
+  { title: "Book A", rating: 4.5 },
+  { title: "Book B", rating: 3.2 },
+  { title: "Book C", rating: 5.0 },
+];
+
+console.log(filterByRating(books));
 
 // Problem-5
 const filterActiveUsers = (items: []) => {};
