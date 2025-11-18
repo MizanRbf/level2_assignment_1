@@ -1,4 +1,3 @@
-// Problem-1
 type PrimitiveValue = string | number | boolean;
 const formatValue = (value: PrimitiveValue): PrimitiveValue => {
   if (typeof value === "string") {
@@ -10,7 +9,6 @@ const formatValue = (value: PrimitiveValue): PrimitiveValue => {
   }
 };
 
-// Problem-2
 type StringOrArray = string | any[];
 const getLength = (value: StringOrArray): number => {
   if (Array.isArray(value)) {
@@ -20,7 +18,6 @@ const getLength = (value: StringOrArray): number => {
   }
 };
 
-// Problem-3
 class Person {
   name: string;
   age: number;
@@ -32,7 +29,6 @@ class Person {
   }
 }
 
-// Problem-4
 type Items = {
   title: string;
   rating: number;
@@ -43,7 +39,6 @@ const filterByRating = (items: Items): Items => {
   return highRatedItems;
 };
 
-// Problem-5
 type User = {
   id: number;
   name: string;
@@ -55,7 +50,6 @@ const filterActiveUsers = (users: User): User => {
   return filteredUsers;
 };
 
-// Problem-6
 interface Book {
   title: string;
   author: string;
@@ -69,8 +63,6 @@ const printBookDetails = (book: Book) => {
   }, Available:${book.isAvailable ? "Yes" : "No"}`;
   console.log(bookInfo);
 };
-
-// Problem-7
 
 type ArrayItem = string | number;
 type InputArray = ArrayItem[];
@@ -108,7 +100,6 @@ const getUniqueValues = (
   return uniqueList;
 };
 
-// Problem-8
 type Product = {
   name: string;
   price: number;
