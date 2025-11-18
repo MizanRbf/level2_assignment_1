@@ -15,14 +15,14 @@ type PersonKeys = keyof Person;
 - Union (|) — variable multiple types হতে পারে।
 - Intersection (&) — variable সব type-এর combination হতে হবে।
 
-উদাহরণ:
+ উদাহরণ:
 
-Union
-let value: string | number;
-value = "hello";
-value = 42;
+ Union
+ let value: string | number;
+ value = "hello";
+ value = 42;
 
-Intersection
-type A = { name: string };
-type B = { age: number };
-type C = A & B;
+ Intersection
+ type A = { name: string };
+ type B = { age: number };
+ type C = A & B;
