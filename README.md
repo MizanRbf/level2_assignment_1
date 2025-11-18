@@ -1,28 +1,28 @@
 # Blog
-1. What is the use of the keyof keyword in TypeScript? Provide an example.
+## 1. What is the use of the keyof keyword in TypeScript? Provide an example.
 
-- keyof দিয়ে আমরা একটি object type-এর সব key-এর union type নিতে পারি।
+keyof দিয়ে আমরা একটি object type-এর সব key-এর union type নিতে পারি।  
 
-- উদাহরণ:
-  type Person = {
-  name: string;
-  age: number;
-};
-type PersonKeys = keyof Person;
+উদাহরণ:  
+type Person = {  
+name: string;  
+age: number;  
+};  
+type PersonKeys = keyof Person;  
    
-2. Provide an example of using union and intersection types in TypeScript.
+## 2. Provide an example of using union and intersection types in TypeScript.  
 
-- Union (|) — variable multiple types হতে পারে।
-- Intersection (&) — variable সব type-এর combination হতে হবে।
+Union (|) — variable multiple types হতে পারে।  
+Intersection (&) — variable সব type-এর combination হতে হবে।  
 
- উদাহরণ:
+ উদাহরণ:  
 
- Union
- let value: string | number;
- value = "hello";
- value = 42;
+ Union  
+ let value: string | number;  
+ value = "hello";  
+ value = 42;  
 
- Intersection
- type A = { name: string };
- type B = { age: number };
- type C = A & B;
+ Intersection  
+ type A = { name: string };  
+ type B = { age: number };  
+ type C = A & B;  
