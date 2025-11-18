@@ -17,12 +17,12 @@ type PersonKeys = keyof Person;
 
 উদাহরণ:
 
-// Union
+Union
 let value: string | number;
 value = "hello";
 value = 42;
 
-// Intersection
+Intersection
 type A = { name: string };
 type B = { age: number };
 type C = A & B;
